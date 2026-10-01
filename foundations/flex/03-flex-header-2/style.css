@@ -9,9 +9,35 @@ body {
 }
 
 .header {
-  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
   border-bottom: 1px solid #ddd;
+  background: white;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 900;
+  font-style: italic;
+  color: rebeccapurple;
+}
+
+.nav, 
+.user-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .profile-image {
@@ -22,27 +48,16 @@ body {
   height: 48px;
 }
 
-.logo {
-  color: rebeccapurple;
-  font-size: 32px;
-  font-weight: 900;
-  font-style: italic;
-}
-
 button {
+  padding: 8px 24px;
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
-  padding: 8px 24px;
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
-}
-
-ul {
-  list-style-type: none;
 }
